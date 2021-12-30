@@ -17,7 +17,7 @@
 }
 .login-form input {
   padding: 8px 6px;
-  font-size: 1em;
+  font-size: 1rem;
   color: #777;
   width: 100%;
 }
@@ -29,7 +29,8 @@
       font-size: 40px;
   }
   .login-form input {
-    padding: 11px 15px;
+    padding: 24px 15px;
+    font-size: 2rem;
   }
   .login-form button {
     font-size: 50px;

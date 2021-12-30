@@ -29,7 +29,8 @@
     font-size: 40px;
   }
   .signup-form input {
-    padding: 11px 15px;
+    padding: 24px 15px;
+    font-size: 2rem;
   }
   .signup-form button {
     font-size: 50px;
