@@ -27,3 +27,8 @@ ul {
   background: #1f9751;
   color: #fff;
 }
+@media only screen and (max-width: 1025px) {
+  .btn {
+    font-size: 30px;
+  }
+}

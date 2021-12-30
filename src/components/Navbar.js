@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css"
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import { useLogout } from "../hooks/useLogout"
 import {useAuthContext} from "../hooks/useAuthContext";
 import {useContext} from "react";
@@ -16,7 +16,7 @@ export default function Navbar() {
             <ul>
                 <li className={styles.title}>
                     {user && (
-                        <div>Welcome, {user.displayName}</div>
+                        <div>Hosgeldin, {user.displayName}</div>
                     )}
 
                     {!user && (
@@ -34,6 +34,7 @@ export default function Navbar() {
                     (
                         <div style={{display:'flex'}}>
                             <li>
+
                                 <Link to="/login">
                                     Login
                                 </Link>

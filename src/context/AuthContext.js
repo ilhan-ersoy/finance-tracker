@@ -1,6 +1,7 @@
 import {createContext, useEffect, useReducer} from "react"
 import firebase from 'firebase/app'
 import {projectAuth} from "../firebase/config";
+import {Redirect} from "react-router";
 
 
 export const AuthContext = createContext()
@@ -8,8 +9,10 @@ export const AuthContext = createContext()
 
 
 export const authReducer = (state,action) => {
+
     switch (action.type) {
         case 'LOGIN':
+            // useHistory()
             return { ...state, user: action.payload }
         case 'LOGOUT':
             return { ...state, user: null }

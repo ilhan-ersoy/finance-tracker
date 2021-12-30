@@ -1,0 +1,15 @@
+.taner {
+    background-image: url("../../../public/gPwYB7jT_400x400.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin:100px auto ;
+    position: relative;
+}
+.name {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 39px;
+    margin: 283px 7px;
+}
