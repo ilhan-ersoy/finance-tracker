@@ -23,11 +23,7 @@ export default function Navbar() {
                         <div>Moneybox</div>
                     )}
                 </li>
-                <li>
-                    <Link to="/login">
-                        Login
-                    </Link>
-                </li>
+
                 {user ?
                     <li>
                         <button className="btn" onClick={()=>logout()}>
@@ -35,12 +31,20 @@ export default function Navbar() {
                         </button>
                     </li>
                     :
-                    <li>
-                        <Link to="/signup">
-                            Signup
-                        </Link>
-                    </li>
-
+                    (
+                        <div style={{display:'flex'}}>
+                            <li>
+                                <Link to="/login">
+                                    Login
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/signup">
+                                    Signup
+                                </Link>
+                            </li>
+                        </div>
+                    )
                 }
             </ul>
         </nav>
