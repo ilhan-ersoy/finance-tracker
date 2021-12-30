@@ -15,6 +15,9 @@ export default function Signup() {
         e.preventDefault()
         console.log(email, password, displayName)
         signup(email, password, displayName)
+        setPassword('')
+        setEmail('')
+        setDisplayName('')
 
     }
 
@@ -38,7 +41,7 @@ export default function Signup() {
             </label>
 
             <label>
-                <span>display name:</span>
+                <span>nick name:</span>
                 <input
                     type="text"
                     onChange={(e)=>setDisplayName(e.target.value)}
